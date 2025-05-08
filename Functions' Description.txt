@@ -1,0 +1,77 @@
+
+🧠 Function Documentation for the Interactive Adventure Game
+
+This document provides short, human-friendly explanations for each function used in the game.
+These comments are meant to make the code easier to read, understand, and maintain.
+
+---
+
+📜 type_writer(text, speed=TYPE_SPEED)
+Purpose:
+Displays any given text on the screen with a typewriter-style effect. This creates suspense and gives the story a cinematic feel.
+
+---
+
+🧾 get_choice(valid_options)
+Purpose:
+Prompts the player for input and keeps asking until a valid response is given. This ensures players only select from allowed choices, preventing input errors.
+
+---
+
+⚖️ check_game_over(score)
+Purpose:
+Determines whether the game should end based on the player's current score. If the score reaches a winning or losing threshold, it ends the game with a relevant message.
+
+---
+
+🚪 wake_up_scene()
+Purpose:
+The opening scene of the game. The player wakes up and must make a decision at the door. The choice influences the next scene and adjusts the score.
+
+---
+
+🧒 encounter_boy()
+Purpose:
+The player meets a frightened boy asking for help. The decision to help or refuse changes the outcome and affects the player’s score significantly.
+
+---
+
+🏃 chase_scene()
+Purpose:
+Triggered if the boy runs off. The player must choose to chase or call out. Each choice leads to a new branch and has different score impacts.
+
+---
+
+🪪 discovery_scene()
+Purpose:
+The player finds a mysterious badge, hinting at a deeper story. This sets up further plot and choices, while giving modest score rewards.
+
+---
+
+🌑 alley_scene()
+Purpose:
+A mysterious stranger offers cryptic advice. The player's decision here affects whether they receive an item (a symbol card) and impacts score.
+
+---
+
+🪞 reflection_scene()
+Purpose:
+A quiet moment where the player reflects on earlier events. This is a low-stakes scene with little or no score impact, meant to build atmosphere.
+
+---
+
+🚉 final_decision()
+Purpose:
+A dramatic choice at the train station—help Elias, report him, or walk away. Each choice creates a different ending and score outcome.
+
+---
+
+🏁 end_game()
+Purpose:
+Final scene of the story. Wraps up the game, shows that the player’s choices mattered, and transitions to game over.
+
+---
+
+🎮 main()
+Purpose:
+The heart of the game loop. It initializes the game, tracks the score, and controls scene flow. It also checks for game-over conditions and asks the player if they want to play again.
